@@ -1,0 +1,7 @@
+@import './base.css';
+
+#app {
+    height: 100dvh;
+    background-color: #FFEE04;
+    overflow: hidden;
+}
