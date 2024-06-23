@@ -14,6 +14,9 @@ const randomBlague = async () => {
           if (!blague.value || blague.value.devinette !== resBlague.devinette) {
             blague.value = resBlague
             blagueChanged = true;
+          } else if (!blague.value) {
+            alert("L'API ne répond pas, veuillez réessayer plus tard");
+            blagueChanged = true;
           }
         });
   }
